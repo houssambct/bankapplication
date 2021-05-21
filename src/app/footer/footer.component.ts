@@ -33,7 +33,7 @@ export class FooterComponent implements OnInit {
       route: "",
     },
     {
-      title: "Accessibilité ",
+      title: "Accessibilité",
       route: "",
     },
     {
@@ -49,15 +49,7 @@ export class FooterComponent implements OnInit {
       route: "",
     },
     {
-      title: "Services Mobiles",
-      route: "",
-    },
-    {
       title: "Données personnelles",
-      route: "",
-    },
-    {
-      title: "Assistance technique",
       route: "",
     },
     {
