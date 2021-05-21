@@ -8,9 +8,9 @@ import { ActivatedRoute, Params } from "@angular/router";
 })
 export class InformationsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
-
+  backTo = '/consulter'
   message: string;
-  title: string;
+  title: string ='Mes comptes'
   displayTitle: string;
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {

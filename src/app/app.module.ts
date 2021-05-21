@@ -22,6 +22,7 @@ import { ConsulterComptesFirstRippleComponent } from './consulter/consulter-comp
 import { ConsulterComptesSecondRippleComponent } from './consulter/consulter-comptes/consulter-comptes-second-ripple/consulter-comptes-second-ripple.component';
 import { FooterComponent } from './footer/footer.component';
 import { InformationsComponent } from './informations/informations.component';
+import { BackButtonComponent } from './back-button/back-button.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { InformationsComponent } from './informations/informations.component';
     ConsulterComptesFirstRippleComponent,
     ConsulterComptesSecondRippleComponent,
     FooterComponent,
-    InformationsComponent
+    InformationsComponent,
+    BackButtonComponent
   ],
   imports: [
     BrowserModule,
