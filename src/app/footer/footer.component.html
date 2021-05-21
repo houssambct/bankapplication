@@ -1,0 +1,15 @@
+<div class="container mb-4 mt-4">
+  <div class="card">
+    <div class="card-body">
+      <div class="row itemsBlock">
+        <div
+          *ngFor="let item of arrayOfPagesTitles"
+          class="col-md-4 col-sm-6 col-12"
+        >
+          <img class="itemImage" src="{{ item.image }}" />
+          <a [routerLink]="['/informations',item.title.split(' ').join('-')]" class="itemitle">- {{ item.title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

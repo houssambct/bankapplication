@@ -1,5 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-
+.navColor{
+    background-color: #f8f4f4;
+}
+.example-ripple-container {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .example-ripple-container:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+  .material-icons {
+    display: inline-flex;
+    vertical-align: top;
+  }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~font-awesome/css/font-awesome.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 @import "~bootstrap/dist/css/bootstrap.css"

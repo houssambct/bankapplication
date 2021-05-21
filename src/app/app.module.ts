@@ -11,6 +11,17 @@ import { ConsulterComponent } from './consulter/consulter.component';
 import { GererComponent } from './gerer/gerer.component';
 import { ContacterComponent } from './contacter/contacter.component';
 import { SouscrireComponent } from './souscrire/souscrire.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ConsulterComptesComponent } from './consulter/consulter-comptes/consulter-comptes.component';
+import { ConsulterEpargneComponent } from './consulter/consulter-epargne/consulter-epargne.component';
+import { ConsulterPretsComponent } from './consulter/consulter-prets/consulter-prets.component';
+import { ConsulterAssurancesComponent } from './consulter/consulter-assurances/consulter-assurances.component';
+import {MatRippleModule} from '@angular/material/core';
+import { ConsulterComptesFirstRippleComponent } from './consulter/consulter-comptes/consulter-comptes-first-ripple/consulter-comptes-first-ripple.component';
+import { ConsulterComptesSecondRippleComponent } from './consulter/consulter-comptes/consulter-comptes-second-ripple/consulter-comptes-second-ripple.component';
+import { FooterComponent } from './footer/footer.component';
+import { InformationsComponent } from './informations/informations.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +31,24 @@ import { SouscrireComponent } from './souscrire/souscrire.component';
     ConsulterComponent,
     GererComponent,
     ContacterComponent,
-    SouscrireComponent
+    SouscrireComponent,
+    HomepageComponent,
+    ConsulterComptesComponent,
+    ConsulterEpargneComponent,
+    ConsulterPretsComponent,
+    ConsulterAssurancesComponent,
+    ConsulterComptesFirstRippleComponent,
+    ConsulterComptesSecondRippleComponent,
+    FooterComponent,
+    InformationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTabsModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
