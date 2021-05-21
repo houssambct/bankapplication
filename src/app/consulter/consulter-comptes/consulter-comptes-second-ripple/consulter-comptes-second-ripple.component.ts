@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulter-comptes-second-ripple.component.scss']
 })
 export class ConsulterComptesSecondRippleComponent implements OnInit {
+  centered = false;
+  disabled = false;
+  unbounded = false;
+
+  radius: number;
+  color: string;
 
   constructor() { }
 
