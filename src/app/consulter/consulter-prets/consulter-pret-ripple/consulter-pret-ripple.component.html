@@ -1,0 +1,26 @@
+<div
+  class="example-ripple-container mat-elevation-z4 mt-4 ml-4 mr-4 blueRipple"
+  matRipple
+  [matRippleDisabled]="disabled"
+  [matRippleUnbounded]="unbounded"
+  [matRippleRadius]="radius"
+  [matRippleColor]="color"
+>
+  <div class="row mt-4 mb-4">
+    <div class="col-sm-6">
+      <div class="card border-light">
+        <div class="card-body text-center">
+          <img [src]="image" width="150px" />
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card border-light">
+        <div class="card-body">
+          <h5 class="card-title">{{ title }}</h5>
+          <p class="card-text">{{ text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -23,6 +23,14 @@ import { ConsulterComptesSecondRippleComponent } from './consulter/consulter-com
 import { FooterComponent } from './footer/footer.component';
 import { InformationsComponent } from './informations/informations.component';
 import { BackButtonComponent } from './back-button/back-button.component';
+import { ConsulterMonCompteComponent } from './consulter/consulter-comptes/consulter-comptes-first-ripple/consulter-mon-compte/consulter-mon-compte.component';
+import {MatTableModule} from '@angular/material/table';
+import { ConsulterPretRippleComponent } from './consulter/consulter-prets/consulter-pret-ripple/consulter-pret-ripple.component';
+import { ContacterHomeComponent } from './contacter/contacter-home/contacter-home.component';
+import { ContacterPhoneComponent } from './contacter/contacter-phone/contacter-phone.component';
+import { ContacterMessagesComponent } from './contacter/contacter-messages/contacter-messages.component';
+import { ContacterDateComponent } from './contacter/contacter-date/contacter-date.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +50,13 @@ import { BackButtonComponent } from './back-button/back-button.component';
     ConsulterComptesSecondRippleComponent,
     FooterComponent,
     InformationsComponent,
-    BackButtonComponent
+    BackButtonComponent,
+    ConsulterMonCompteComponent,
+    ConsulterPretRippleComponent,
+    ContacterHomeComponent,
+    ContacterPhoneComponent,
+    ContacterMessagesComponent,
+    ContacterDateComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +64,8 @@ import { BackButtonComponent } from './back-button/back-button.component';
     BrowserAnimationsModule,
     MatDividerModule,
     MatTabsModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
