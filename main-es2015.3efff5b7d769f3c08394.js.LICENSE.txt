@@ -8,6 +8,13 @@
  *         
  */
 
+/*!
+ * Chart.js v2.9.4
+ * https://www.chartjs.org
+ * (c) 2020 Chart.js Contributors
+ * Released under the MIT License
+ */
+
 /*! Hammer.JS - v2.0.7 - 2016-04-22
  * http://hammerjs.github.io/
  *
@@ -502,3 +509,7 @@ WebPRiffParser dominikhlbg@gmail.com
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * ====================================================================
  */
+
+//! moment.js
+
+//! moment.js locale configuration
