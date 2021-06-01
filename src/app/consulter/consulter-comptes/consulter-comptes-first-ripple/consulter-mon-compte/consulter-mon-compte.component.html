@@ -4,12 +4,16 @@
       <app-back-button [title]="title" [route]="backTo"></app-back-button>
 
       <div class="mt-4 mb-4 d-flex flex-row-reverse">
-        <button (click)="print()" type="button" class="btn btn-warning float-right">
-            <span class="material-icons"> file_download </span>
-            Télécharger détails PDF
+        <button
+          (click)="print()"
+          type="button"
+          class="btn btn-warning float-right"
+        >
+          <span class="material-icons"> file_download </span>
+          Télécharger détails PDF
         </button>
       </div>
-      
+
       <table
         class="mt-2"
         mat-table

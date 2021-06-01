@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <h6>Compte N° 8974547454454 MR BOUCETTA HOUSSAM</h6>
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+          <img src="/assets/visaCard.jpg" class="w-25" />
+        </div>
+        <div class="p-2 bd-highlight">
+          9645 **** **** 3624 M HOUSSAM BOUCETTA
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5>* Plafonds détaillés :</h5>
+              <ul>
+                <li *ngFor="let item of plafondTitles">{{ item.title }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <app-chat-polar></app-chat-polar>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <app-chat-donnut></app-chat-donnut>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h6>BESOIN D'UNE AUGMENTATION URGENTE ?</h6>
+              <ul>
+                <li *ngFor="let item of helpTiles">{{ item.title }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h6>MISE EN OPPOSITION</h6>
+
+              Pour mettre en opposition immédiatement votre carte suite à une
+              perte, un vol ou une fraude, contactez votre conseiller
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <app-chat-pie></app-chat-pie>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div></div>

@@ -1,11 +1,10 @@
-<nav class="navColor">
+<nav class="navColor headerMobile">
     <div class="container">
       <div class="d-flex bd-highlight">
         <div class="p-2 flex-grow-1 bd-highlight">  <a class="font-weight-bold navbar-brand" href="#">ESPACE CLIENT MA BANQUE 	</a>
         </div>
-        <div class="p-2 bd-highlight"><a class="navbar-brand" href="#">Aide	</a></div>
-        <div class="p-2 bd-highlight"><a class="navbar-brand" href="#">Mon profil	</a></div>
-        <div class="p-2 bd-highlight"><img src='assets/shutdown.png' width="40px"></div>
+        <div class="p-2 bd-highlight"><a routerLink="/profil" class="navbar-brand" href="#">Mon profil	</a></div>
+        <div class="p-2 bd-highlight"><img (click)='close()' src='assets/shutdown.png' width="40px"></div>
       </div>
     </div>
   </nav>

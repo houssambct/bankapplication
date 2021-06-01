@@ -1,1 +1,39 @@
-<p>contacter-date works!</p>
+<div class="mt-4 container dates">
+  <div class="d-flex flex-column">
+    <div class="p-2">
+      <h4>Choisissez le jour du rendez-vous</h4>
+      <mat-form-field appearance="fill">
+        <input
+          matInput
+          [matDatepicker]="picker"
+          (dateChange)="changeDate($event)"
+          [min]="today"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="p-2" [hidden]="hiddenTime">
+      <div class="24hr-example">
+        <h4>Choisissez l'heure du rendez-vous</h4>
+
+        <input
+          (ngModelChange)="changeTime($event)"
+          [(ngModel)]="houreTime"
+          [ngxTimepicker]="fullTime"
+          [min]="'08:15 am'"
+          [max]="'05:15 pm'"
+          [format]="24"
+          readonly
+        />
+        <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+      </div>
+    </div>
+    <div class="p-2 text-primary" [hidden]="hiddenTime || hiddenText">
+      <h5>Vous avez choisi le {{ startDate }} à {{ houreTime }}</h5>
+      <button (click)='sendRequest()' type="button" class="btn btn-primary btn-lg btn-block">Confirmer</button>
+
+    </div>
+  </div>
+  
+</div>

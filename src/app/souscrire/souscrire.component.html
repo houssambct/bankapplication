@@ -1,1 +1,28 @@
-<p>souscrire works!</p>
+<div class="container">
+  <mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Type de crédit souhaité</ng-template>
+
+        <app-souscrire-first-step></app-souscrire-first-step>
+        <div>
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Montant mensuel payé">
+      <form [formGroup]="secondFormGroup">
+        <app-souscrire-second-step></app-souscrire-second-step>
+
+        <div>
+          <button mat-button matStepperPrevious>Retour</button>
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <app-souscrire-final-step></app-souscrire-final-step>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

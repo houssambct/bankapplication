@@ -1,9 +1,13 @@
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="assets/.png" class="d-inline-block align-top" alt="" />
-    </a>
+  <button mat-button>
+    <img
+      src="assets/houssamBank.png"
+      class="d-inline-block align-top w-75"
+      alt=""
+    />
+  </button>
 
+  <button mat-button>
     <a
       class="navbar-brand font-weight-bold"
       [routerLinkActiveOptions]="{ exact: true }"
@@ -11,23 +15,25 @@
       routerLink="/consulter"
       >CONSULTER</a
     >
-    <mat-divider inset vertical></mat-divider>
+  </button>
 
+  <button mat-button>
     <a
       class="navbar-brand font-weight-bold"
       [routerLinkActiveOptions]="{ exact: true }"
       [routerLinkActive]="['is-active']"
       routerLink="/contacter"
-      >CONTACTER <span class="badge badge-light">4</span></a
-    >
-    <mat-divider inset vertical></mat-divider>
+      >CONTACTER <span matBadge="4" matBadgeOverlap="false"></span>
+    </a>
+  </button>
 
+  <button mat-button>
     <a
       class="navbar-brand font-weight-bold"
       [routerLinkActiveOptions]="{ exact: true }"
       [routerLinkActive]="['is-active']"
       routerLink="/souscrire"
       >SOUSCRIRE</a
-    ><span class="badge badge-warning">Warning</span>
-  </nav>
+    >
+  </button>
 </div>

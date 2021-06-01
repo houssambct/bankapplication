@@ -5,6 +5,7 @@ import { ConsulterComponent } from './consulter/consulter.component';
 import { ContacterComponent } from './contacter/contacter.component';
 import { GererComponent } from './gerer/gerer.component';
 import { InformationsComponent } from './informations/informations.component';
+import { ProfilComponent } from './profil/profil.component';
 import { SouscrireComponent } from './souscrire/souscrire.component';
 
 
@@ -31,6 +32,9 @@ const routes: Routes = [{
 },{
   path: 'consulter/consultermoncompte',
   component: ConsulterMonCompteComponent  
+},{
+  path: 'profil',
+  component: ProfilComponent  
 }];
 
 @NgModule({

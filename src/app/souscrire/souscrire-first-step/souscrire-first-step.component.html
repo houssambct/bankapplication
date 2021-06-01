@@ -1,0 +1,11 @@
+<div class='container'>
+    <h4>Veuillez choisir</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Crédit</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let credit of credits" [value]="credit.title">
+            {{credit.title}}  {{credit.montant}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>

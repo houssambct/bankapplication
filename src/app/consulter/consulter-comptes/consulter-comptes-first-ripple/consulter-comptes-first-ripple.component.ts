@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-consulter-comptes-first-ripple',
-  templateUrl: './consulter-comptes-first-ripple.component.html',
-  styleUrls: ['./consulter-comptes-first-ripple.component.scss']
+  selector: "app-consulter-comptes-first-ripple",
+  templateUrl: "./consulter-comptes-first-ripple.component.html",
+  styleUrls: ["./consulter-comptes-first-ripple.component.scss"],
 })
 export class ConsulterComptesFirstRippleComponent implements OnInit {
   centered = false;
@@ -13,9 +13,7 @@ export class ConsulterComptesFirstRippleComponent implements OnInit {
   radius: number;
   color: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
